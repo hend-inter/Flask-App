@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title> Successful </title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/error.css') }}"> 
+                 
+    </head>
+    <body>
+      
+<div class="center"><br><br><br><br><br>
+<div class="success">{{ msg }}</div>
+
+</div>
+  <script>    
+    window.setTimeout(function(){
+
+      // Move to a new location or you can do something else
+      window.location.href = href="{{url_for('login')}}";
+
+      }, 6000);
+
+</script>
+        
+    </body>
+</html>
