@@ -13,7 +13,7 @@ class AppTest(unittest.TestCase):
     # check if user can login correctly with correct credentials
     def test_correct_login(self) :
         tester=app.test_client(self)
-        response = tester.post('/login', data=dict(username='Lukas',password='123'), follow_redirects=True)
+        response = tester.post('/login', data=dict(username='Hend',password='123'), follow_redirects=True)
         self.assertIn(b'Logged in successfully', response.data) 
 
     # check if user can'not login correctly with incorrect credentials
